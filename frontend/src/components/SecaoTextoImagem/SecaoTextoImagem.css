@@ -1,0 +1,115 @@
+.secao-texto-imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: white;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+
+.secao-edicao {
+  width: 100%;
+  max-width: 1100px;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin-bottom: 3rem;
+}
+
+.overlay {
+  padding: 2rem;
+  color: #111;
+  text-align: center;
+  width: 100%;
+  background: none;
+}
+
+.imagem-container {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.imagem-preview {
+  width: 95%;
+  max-width: 1100px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.btn-remover {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-remover:hover {
+  background-color: rgba(220, 53, 69, 0.8);
+}
+
+.ponteado-editavel {
+  outline: 2px dashed #4da6ff;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.botao-editar-imagem {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 36px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-editar-imagem:hover {
+  background-color: #f0f0f0;
+}
+
+.modo-visualizacao {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.secao-visualizacao {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding-top: 60px;
+  box-sizing: border-box;
+}

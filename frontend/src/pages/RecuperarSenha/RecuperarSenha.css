@@ -1,0 +1,100 @@
+.recuperar-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  z-index: 9999;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.fundo-recuperar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.card-recuperacao {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.titulo-recuperar {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+.form-recuperar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-recuperar input {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form-recuperar button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-recuperar button:hover {
+  background-color: #2563eb;
+}
+
+.mensagem {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.mensagem.sucesso {
+  color: green;
+}
+
+.mensagem.erro {
+  color: red;
+}
+
+@media (max-width: 500px) {
+  .card-recuperacao {
+    padding: 30px 20px;
+  }
+}

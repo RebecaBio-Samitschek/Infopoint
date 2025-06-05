@@ -1,0 +1,138 @@
+.permissoes-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-image: url('../../assets/fundo-dashboard.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 120px 20px 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-dashboard {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.logo-navbar {
+  max-height: 40px;
+  transform: scale(4);
+}
+
+.btn-voltar {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-voltar:hover {
+  background-color: #e33c5a;
+}
+
+.titulo-minhas-paginas {
+  font-size: 42px;
+  font-weight: 800;
+  color: #222;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.permissoes-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  backdrop-filter: blur(5px);
+  color: #222;
+}
+
+.form-adicionar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.form-adicionar input,
+.form-adicionar select {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-adicionar button {
+  padding: 8px 12px;
+  background-color: #6c2bd9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-adicionar button:hover {
+  background-color: #5721b5;
+}
+
+.lista-permissoes {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.lista-permissoes li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.remover {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.erro {
+  color: red;
+  margin-top: 10px;
+}
+
+.mensagem {
+  color: green;
+  margin-top: 10px;
+}

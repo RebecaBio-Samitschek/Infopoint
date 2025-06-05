@@ -1,0 +1,74 @@
+.secao3 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.secao3-texto {
+  position: absolute;
+  max-width: 750px;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #000;
+}
+
+.paragrafo1 {
+  top: 12%;
+  left: 30%;
+}
+
+.paragrafo2 {
+  top: 39%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.paragrafo3 {
+  top: 66%;
+  left: 30%;
+}
+
+.secao3-texto strong {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .secao3 {
+    background-image: none !important;
+    background-color: #f9f9f9;
+    height: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secao3-img-mobile {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  .secao3-texto {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .secao3-texto p {
+    line-height: 1.6;
+  }
+}

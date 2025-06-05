@@ -1,0 +1,38 @@
+.pagina-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .pagina-card h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .pagina-card p {
+    margin: 5px 0;
+  }
+  
+  .pagina-card-botoes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pagina-card-botoes button {
+    padding: 8px 14px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .pagina-card-botoes button:hover {
+    background-color: #0056b3;
+  }
+  

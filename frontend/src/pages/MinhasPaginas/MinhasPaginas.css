@@ -1,0 +1,192 @@
+.minhas-paginas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-image: url('../../assets/fundo-dashboard.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 120px 20px 60px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.navbar-dashboard {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+
+.logo-navbar {
+  max-height: 40px;
+  transform: scale(4);
+}
+
+
+.btn-voltar {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-right: 3vw;
+}
+
+.btn-voltar:hover {
+  background-color: #e33c5a;
+}
+
+
+.titulo-minhas-paginas {
+  font-size: 42px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+
+.paginas-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+.mensagem-vazia {
+  font-size: 18px;
+  color: #444;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.pagina-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+}
+
+.pagina-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #6c2bd9;
+}
+
+.pagina-card p {
+  font-size: 14px;
+  color: #444;
+  margin: 4px 0;
+}
+
+.pagina-card strong {
+  color: #222;
+}
+
+.pagina-card-buttons {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagina-card-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  background-color: transparent;
+  color: #6c2bd9;
+  font-weight: bold;
+  border: 1px solid #6c2bd9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagina-card-buttons button:hover {
+  background-color: #f1eaff;
+  color: #5721b5;
+  border-color: #5721b5;
+}
+
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+
+  .btn-voltar {
+    padding: 8px 16px;
+    font-size: 13px;
+    margin-right: 20px;
+  }
+
+  .logo-navbar {
+    transform: scale(2.2);
+    max-height: 36px;
+  }
+
+  .paginas-lista {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .pagina-card {
+    width: 90%;
+    max-width: 350px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-navbar {
+    transform: scale(1.6);
+    max-height: 32px;
+  }
+
+  .btn-voltar {
+    font-size: 12px;
+    padding: 6px 14px;
+    margin-right: 0;
+  }
+
+  .titulo {
+    font-size: 26px;
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,228 @@
+#como-usar {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #f44b69, #9345ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+
+.secao4-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.secao4-imagem {
+  position: relative;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secao4-imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+
+.secao4-numero {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #9345ff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.secao4-texto {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  width: 100%;
+}
+
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.seta:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.seta.anterior {
+  left: 1rem;
+}
+
+.seta.proxima {
+  right: 1rem;
+}
+
+.secao4-imagem {
+  height: 300px;
+  max-height: 300px;
+}
+
+.secao4-imagem img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .secao4-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .secao4-texto {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .seta {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .secao4-numero {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+
+.secao4-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.secao4-progress {
+  height: 100%;
+  width: 100%;
+  background-color: #9345ff;
+  animation: progressoSlide 5s linear forwards;
+}
+
+.secao4-etapas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.etapa-barra {
+  width: 35px;
+  height: 8px;
+  background: #d9d9d9;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.etapa-barra.ativa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #ff4e50, #fc913a, #f9d423, #00c9ff, #92fe9d);
+  animation: preencher 10s linear forwards;
+  border-radius: 4px;
+}
+
+@keyframes preencher {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #como-usar {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .secao4-container {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .secao4-imagem img {
+    border-radius: 1rem;
+    max-height: 280px;
+    object-fit: cover;
+  }
+
+  .secao4-numero {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+
+  .seta {
+    font-size: 1.3rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .secao4-texto {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .etapa-barra {
+    width: 28px;
+    height: 6px;
+  }
+}

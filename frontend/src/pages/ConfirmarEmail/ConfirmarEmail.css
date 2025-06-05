@@ -1,0 +1,68 @@
+.confirmar-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  z-index: 9999;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.fundo-confirmar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.card-confirmacao {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-confirmacao h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.link-voltar {
+  text-decoration: underline;
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.link-voltar:hover {
+  color: #1e40af;
+}
+
+.card-confirmacao.sucesso h2 {
+  color: #10b981;
+}
+
+.card-confirmacao.erro h2 {
+  color: #ef4444;
+}
+
+@media (max-width: 500px) {
+  .card-confirmacao {
+    padding: 30px 20px;
+  }
+}

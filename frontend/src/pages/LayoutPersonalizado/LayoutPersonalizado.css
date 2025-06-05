@@ -1,0 +1,92 @@
+.layout-personalizado {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-lateral {
+  width: 280px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-lateral h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.label-preview {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.conteudo {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #f0f0f0;
+}
+
+.secao-wrapper {
+  position: relative;
+}
+
+.secao-container {
+  position: relative;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.btn-remover {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-remover:hover {
+  background-color: rgba(220, 53, 69, 0.8);
+}
+
+.secao-container.destacar {
+  animation: destaqueZoom 0.4s ease-in-out;
+}
+
+@keyframes destaqueZoom {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.back-button:hover {
+  background-color: #0056b3;
+}
